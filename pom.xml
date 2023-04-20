@@ -5,7 +5,7 @@
   <artifactId>config-server</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Spring Cloud Config Server</name>
-  
+
   <properties>
     <java-version>11</java-version>
     <maven.compiler.source>11</maven.compiler.source>
@@ -13,7 +13,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring-cloud.version>2021.0.6</spring-cloud.version>
   </properties>
-    
+
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -64,5 +64,5 @@
       </plugin>      
     </plugins>
   </build>
-  
+
 </project>
