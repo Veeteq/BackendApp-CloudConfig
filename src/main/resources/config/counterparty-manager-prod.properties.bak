@@ -16,7 +16,3 @@ spring.jpa.properties.hibernate.format_sql=false
 spring.h2.console.enabled=false
 
 management.endpoints.web.exposure.include=*
-
-### ActiveMQ Configuration
-spring.activemq.user=artemis
-spring.activemq.password=artemis
