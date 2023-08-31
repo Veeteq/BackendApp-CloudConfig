@@ -5,14 +5,13 @@
   <artifactId>config-server</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Spring Cloud Config Server</name>
-  <description>Spring Cloud Config Server</description>
 
   <properties>
-    <java-version>17</java-version>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
+    <java-version>11</java-version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring-cloud.version>2021.0.7</spring-cloud.version>
+    <spring-cloud.version>2021.0.6</spring-cloud.version>
   </properties>
 
   <parent>
@@ -23,7 +22,6 @@
   </parent>
 
   <dependencies>
-    <!-- Spring Cloud -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-server</artifactId>
@@ -39,7 +37,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -55,20 +53,16 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <release>17</release>
-          <source>17</source>
-          <target>17</target>
+          <release>11</release>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>      
     </plugins>
-    <finalName>${project.artifactId}</finalName>
   </build>
 
 </project>
